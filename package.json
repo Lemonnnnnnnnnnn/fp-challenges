@@ -1,18 +1,21 @@
 {
-  "name": "fp-challenges",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "fp-ts": "^2.16.6"
-  },
-  "devDependencies": {
-    "typescript": "^5.5.2"
-  }
+	"name": "fp-challenges",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "vitest"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"fp-ts": "^2.16.6",
+		"ramda": "^0.30.1"
+	},
+	"devDependencies": {
+		"@types/ramda": "^0.30.0",
+		"typescript": "^5.5.2",
+		"vitest": "^1.6.0"
+	}
 }
