@@ -1,11 +1,15 @@
-import * as _ from "ramda";
-// 练习 1a
-//==============
-// 使用 `map` 创建一个新的 `sentences` 函数，使之能够操作字符串数组
+import * as R from "ramda";
+
 export function sentences(str: string[]): string[][] {
-	return _.map(split)(str);
+	return R.map(R.split(" "), str);
 }
 
-function split(str: string) {
-	return str.split(" ");
+export function filterQs(arg0: string[]): any {
+	return R.filter((item) => /^q.+$/.test(item), arg0);
+}
+export function max(arg0: number[]) {
+	return R.pipe(
+		R.sort<number>((a, b) => b - a),
+		R.head,
+	)(arg0);
 }

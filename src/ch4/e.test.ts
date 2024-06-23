@@ -10,14 +10,18 @@ test("Exercise 1a", () => {
 	]);
 });
 
-// it('Exercise 2', function(){
-//   assert.deepEqual(E.filterQs(['quick', 'camels', 'quarry', 'over', 'quails']), ['quick', 'quarry', 'quails']);
-// });
+test("Exercise 2", () => {
+	expect(E.filterQs(["quick", "camels", "quarry", "over", "quails"])).toEqual([
+		"quick",
+		"quarry",
+		"quails",
+	]);
+});
 //
-// it('Exercise 3', function(){
-//   assert.equal(E.max([323,523,554,123,5234]), 5234);
-// });
-//
+test("Exercise 3", function () {
+	expect(E.max([323, 523, 554, 123, 5234])).toEqual(5234);
+});
+
 // if (E.slice != undefined) {
 //   it('Curry Bonus 1', function(){
 //     assert.deepEqual(E.slice(1)(3)(['a', 'b', 'c']), ['b', 'c']);
