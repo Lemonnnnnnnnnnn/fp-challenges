@@ -30,3 +30,30 @@ it('Curry Bonus 2', function() {
 	expect(E.take(2)(['a', 'b', 'c']),).toEqual(['a', 'b']);
 });
 
+describe("Compose Exercises", function() {
+	var CARS = E.CARS;
+
+	it('Exercise 1', function() {
+		expect(E.isLastInStock(CARS)).toEqual(false);
+	});
+
+	it('Exercise 2', function() {
+		expect(E.nameOfFirstCar(CARS)).toEqual("Ferrari FF");
+	});
+
+	it('Exercise 3', function() {
+		expect(E.averageDollarValue(CARS)).toEqual(790700);
+	});
+
+	it('Exercise 4', function() {
+		expect(E.sanitizeNames(CARS)).toEqual(['ferrari_ff', 'spyker_c12_zagato', 'jaguar_xkr_s', 'audi_r8', 'aston_martin_one_77', 'pagani_huayra']);
+	});
+
+	it('Bonus 1', function() {
+		expect(E.availablePrices(CARS)).toEqual('$700,000.00, $1,850,000.00');
+	});
+
+	it('Bonus 2', function() {
+		expect(E.fastestCar(CARS)).toEqual('Aston Martin One-77 is the fastest');
+	});
+});
