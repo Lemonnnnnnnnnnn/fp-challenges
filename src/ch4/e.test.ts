@@ -17,20 +17,16 @@ test("Exercise 2", () => {
 		"quails",
 	]);
 });
-//
-test("Exercise 3", function () {
+
+test("Exercise 3", function() {
 	expect(E.max([323, 523, 554, 123, 5234])).toEqual(5234);
 });
 
-// if (E.slice != undefined) {
-//   it('Curry Bonus 1', function(){
-//     assert.deepEqual(E.slice(1)(3)(['a', 'b', 'c']), ['b', 'c']);
-//   });
-// }
-//
-// if (E.take != undefined) {
-//   it('Curry Bonus 2', function(){
-//     assert.deepEqual(E.take(2)(['a', 'b', 'c']), ['a', 'b']);
-//   });
-// }
-//
+it('Curry Bonus 1', function() {
+	expect(E.slice(1)(3)(['a', 'b', 'c']),).toEqual(['b', 'c']);
+});
+
+it('Curry Bonus 2', function() {
+	expect(E.take(2)(['a', 'b', 'c']),).toEqual(['a', 'b']);
+});
+
